@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- container div  -->
+    <div class="w-full h-full flex bg-gray-200 "> 
+        <!-- side menu start -->
+        <div class="w-[350px] h-screen flex flex-col justify-between bg-white p-5">
+            <header class="h-[100px] w-full flex items-center justify-center">
+                <img 
+                width="50px"
+                height="50px"
+                src="imgs/pie-chart-logo.png" 
+                class="rounded-full"
+                alt="pie chart logo"
+                >
+                <h3 class="font-bold">METRIX</h3>
+            </header>
+            <menu class="w-full h-full flex flex-col justify-between p-4">
+                <div class="flex flex-col">
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">Dashboard</button>
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">Orders</button>
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">Customers</button>
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">Inventry</button>
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">Conversations</button>
+                    <button class="hover:bg-blue-500 px-4 py-2 tex-sm text-gray-600 hover:text-white rounded-md">settings</button>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <button class="bg-gray-200 px-4 py-2 text-gray-600 rounded-md">Contact support</button>
+                    <button class="bg-red-200 px-4 py-2 rounded-md">
+                        Free Gifts Awaits You
+                        <small>upgrade your account now</small>
+                    </button>
+                </div>
+            </menu>
+            <footer class="w-full h-12 p-5">
+                <button 
+                class="w-full text-red-600 flex items-center gap-2 hover:border border-red-600 py-1 px-4 rounded-md">
+                    <img 
+                    width="20px"
+                    height="20px"
+                    src="imgs/logout-icon.png" 
+                    alt="logout icon">
+                    Logout
+                </button>
+            </footer>
+        </div>
+        <!-- side menu end  -->
+
+        <!-- main window start  -->
+        <div class="w-full h-full">
+            <!-- header section start -->
+            <header class="w-full h-[100px] flex flex-col bg-white justify-around py-2 px-4">
+                <div class="w-full flex justify-between items-center">
+                    <h3>Dashboard</h3>
+                    <div class="flex gap-4 items-center">
+                        <a 
+                        href="#"
+                        class="bg-red-200 py-1 px-4 rounded-md">Nanny's Shop</a>
+                        <img 
+                        width="30px"
+                        height="30px"
+                        src="imgs/bell-icon-logo.jpeg"
+                        class="rounded-md" 
+                        alt="bell logo">
+                        <img 
+                        width="40px"
+                        height="40px"
+                        src="imgs/profile-picture.jpeg"
+                        class="rounded-md"  
+                        alt="profile photo">
+                    </div>
+                </div>
+                <hr>
+                <img 
+                width="20px"
+                height="20px"
+                src="imgs/home-icon-logo.png" 
+                alt="home logo">
+            </header>
+            <!-- header section end -->
+
+            <!-- main section Start  -->
+            <main class="w-full flex flex-col gap-4 p-4">
+                <!-- top three divs section  -->
+                <div class="w-full flex gap-4">
+                    <div class="w-[60%] flex gap-4">
+                        <!-- top section div one -->
+                        <div class="w-full h-[150px] bg-white p-4 flex flex-col justify-between rounded-md">
+                            <div class="w-full flex justify-between items-center">
+                                <img 
+                                width="30px"
+                                height="30px"
+                                src="imgs/home-icon-logo.png" 
+                                alt="home logo">
+                                <a 
+                                href="#"
+                                class=" py-1 px-4 rounded-md"
+                                >This Week</a>
+                            </div>
+                            <div class="w-full flex items-center">
+                                <div class="w-full">
+                                    <span>Sales</span>
+                                    <p>N4,000,000.00</p>
+                                </div>
+                                <div class="w-full">
+                                    <span>Volume</span>
+                                    <p>450 <small class="text-green-500">+20.00%</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- div one end -->
+                        <!-- top section div two -->
+                        <div class="w-full h-[150px] bg-white p-4 flex flex-col justify-between rounded-md">
+                            <div class="w-full flex justify-between items-center">
+                                <img 
+                                width="30px"
+                                height="30px"
+                                src="imgs/home-icon-logo.png" 
+                                alt="home logo">
+                                <a 
+                                href="#"
+                                class=" py-1 px-4 rounded-md"
+                                >This Week</a>
+                            </div>
+                            <div class="w-full flex items-center">
+                                <div class="w-full">
+                                    <span>Customers</span>
+                                    <p>1,250 <small class="text-green-500">+15.80%</small></p>
+                                </div>
+                                <div class="w-full">
+                                    <span>Active</span>
+                                    <p>1,180 <small class="text-green-500">85%</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- div two end -->
+                    </div>
+                    <!-- top section div three -->
+                    <div class="w-[40%] h-[150px] bg-white p-4 flex flex-col justify-between rounded-md">
+                        <div class="w-full flex justify-between items-center">
+                            <img 
+                            width="30px"
+                            height="30px"
+                            src="imgs/home-icon-logo.png" 
+                            alt="home logo">
+                            <a 
+                            href="#"
+                            class=" py-1 px-4 rounded-md"
+                            >This Week</a>
+                        </div>
+                        <div class="w-full flex justify-between items-center">
+                            <div class="w-full">
+                                <span>All Orders</span>
+                                <p>450</p>
+                            </div>
+                            <div class="w-full">
+                                <span>Pending</span>
+                                <p>5</p>
+                            </div>
+                            <div class="w-full">
+                                <span>Completed</span>
+                                <p>445</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- div three end -->
+                </div>
+                <!-- top three section end -->
+
+                <!-- section after the top three  -->
+                <div class="w-full h-full flex gap-4">
+                    <!-- rigth section with four divs total -->
+                    <div class="w-[60%] h-full flex flex-col gap-4 rounded-md">
+                        <!-- upper section with three divs total  -->
+                        <div class="h-full w-full flex gap-4">
+                            <!-- left section #MARKETING   -->
+                            <div class="w-[50%] bg-white flex flex-col items-center justify-center gap-2 p-4 rounded-md">
+                                <div class="w-full flex items-center justify-between">
+                                    <h4 class="font-bold">Marketing</h4>
+                                    <span>This Week</span>
+                                </div>
+                                <div class="w-full flex justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-[10px] h-[10px] bg-blue-500 rounded-full"></div>
+                                        <span>Acquisition</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-[10px] h-[10px] bg-purple-500 rounded-full"></div>
+                                        <span>Purchase</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-[10px] h-[10px] bg-orange-500 rounded-full"></div>
+                                        <span>Retension</span>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4 flex items-center justify-center">
+                                    <div 
+                                        class="bg-purple-300 w-[100px] h-[100px] rounded-full"
+                                    >
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- left section #MARKETING end  -->
+
+                            <!-- right section with two divs -->
+                            <div class="w-[50%] flex flex-col gap-4">
+                                <!-- top section  -->
+                                <div class="w-full h-full bg-blue-400 flex flex-col justify-between text-white rounded-md p-4">
+                                    <div>
+                                        <img 
+                                        width="30px"
+                                        height="30px"
+                                        src="imgs/bell-icon-logo.jpeg"
+                                        class="rounded-md" 
+                                        alt="home logo">
+                                    </div>
+                                    <div class="w-full flex justify-between">
+                                        <div class="w-full">
+                                            <p>All products</p>
+                                            <span class="text-xl">1,250</span>
+                                        </div>
+                                        <div class="w-full">
+                                            <p>Active</p>
+                                            <span class="text-xl">32</span><small>+24%</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- top section end -->
+
+                                <!-- bottom section  -->
+                                <div class="w-full h-full bg-white p-4 flex flex-col justify-between rounded-md">
+                                    <div class="w-full flex justify-between items-center">
+                                        <img 
+                                        width="30px"
+                                        height="30px"
+                                        src="imgs/home-icon-logo.png" 
+                                        alt="home logo">
+                                        <a 
+                                        href="#"
+                                        class=" py-1 px-4 rounded-md"
+                                        >This Week</a>
+                                    </div>
+                                    <div class="w-full flex items-center">
+                                        <div class="w-full">
+                                            <p>Abandoned Cart</p>
+                                            <span>20% <small class="text-green-500">+0.00%</small></span>
+                                        </div>
+                                        <div class="w-full">
+                                            <p>Customers</p>
+                                            <span>30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom section end -->
+                            </div>
+                            <!-- right section with two divs end -->
+                        </div>
+                        <!-- upper section with three divs total end -->
+
+                        <!-- lower section with summery  -->
+                        <div class="w-full h-full bg-white flex flex-col gap-4 rounded-md p-4">
+                            <div class="w-full flex items-center justify-between ">
+                                <div class="flex gap-4 items-center">
+                                    <h4>Summery</h4>
+                                    <a 
+                                    href="#"
+                                    class="bg-gray-200 text-blue-400 px-4 py-1 rounded-md">Sales</a>
+                                </div>
+                                <a 
+                                href="#"
+                                class=" py-1 px-4 rounded-md"
+                                >Last 7 Days</a>
+                            </div>
+                            <div>
+                                <img 
+                                width="500px"
+                                height="250px"
+                                src="imgs/bar-chart.png"
+                                class="h-full"
+                                alt="a bar chart">
+                            </div>
+                        </div>
+                        <!-- lower section with summery end -->
+                    </div>
+                    <!-- rigth section with four divs total end -->
+
+                    <!-- left section with recent orders  -->
+                    <div class="w-[40%] h-full bg-purple-400 rounded-md">
+                    
+                    </div>
+                    <!-- left section with recent orders end -->
+                </div>
+                <!-- section after the top three end  -->
+            </main>
+        </div>
+        <!-- main window end  -->
+    </div>
+</body>
+</html>
